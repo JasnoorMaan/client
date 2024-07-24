@@ -2,7 +2,14 @@ import { CONTRACT } from "@/utils/constants";
 import { prepareContractCall } from "thirdweb";
 import { TransactionButton } from "thirdweb/react";
 
-export const Cards = ({ index, name, votes }) => {
+// Define the interface for the props
+interface CardProps {
+  index: number; // Assuming index is a number, update if necessary
+  name: string;
+  votes: string;
+}
+
+export const Cards: React.FC<CardProps> = ({ index, name, votes }) => {
   const handleTransaction = () => {
     try {
       const indexBigInt = BigInt(index); // Explicitly convert index to BigInt
