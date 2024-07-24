@@ -2,9 +2,8 @@ import { CONTRACT } from "@/utils/constants";
 import { prepareContractCall } from "thirdweb";
 import { TransactionButton } from "thirdweb/react";
 
-// Define the interface for the props
 interface CardProps {
-  index: number; // Assuming index is a number, update if necessary
+  index: number;
   name: string;
   votes: string;
 }
