@@ -21,7 +21,7 @@ function Navbar() {
           <Link href="/" className="">
             <h2 className="text-md font-semibold">Vote</h2>
           </Link>
-          <Link href="agendas" className="">
+          <Link href="/agendas" className="">
             <h2 className="text-md font-semibold">Agendas</h2>
           </Link>
         </div>
