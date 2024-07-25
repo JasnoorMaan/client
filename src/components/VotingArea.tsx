@@ -38,7 +38,7 @@ export const VotingArea = () => {
   }
 
   // Handle BigInt time conversion
-  const remainingTimeInDays = time ? Number(time) / 1440 : 0;
+  const remainingTimeInDays = time ? Number(time) / 86400 : 0;
 
   return (
     <div className="flex flex-col justify-center align-middle m-4 gap-8">
@@ -49,7 +49,7 @@ export const VotingArea = () => {
         </div>
       ) : (
         <p className="text-center">
-          Time Remaining: {remainingTimeInDays.toFixed(2)} hours
+          Time Remaining: {remainingTimeInDays.toFixed(2)} days
         </p>
       )}
 
