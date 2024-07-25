@@ -1,6 +1,6 @@
 "use client";
 
-import { client, myChain } from "@/utils/constants";
+import { client, myChain } from "../utils/constants";
 import Link from "next/link";
 import { ConnectButton } from "thirdweb/react";
 

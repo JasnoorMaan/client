@@ -2,7 +2,7 @@
 
 import { useActiveAccount, useReadContract } from "thirdweb/react";
 import { Cards } from "./Cards";
-import { CONTRACT } from "@/utils/constants";
+import { CONTRACT } from "../utils/constants";
 
 export const VotingArea = () => {
   const account = useActiveAccount();
