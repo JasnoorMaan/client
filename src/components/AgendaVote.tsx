@@ -50,7 +50,7 @@ export const AgendaVote = () => {
             return (
               <Acards
                 key={index}
-                index={index}
+                index={index + 1}
                 name={name}
                 desc={desc}
                 votes={votesString}

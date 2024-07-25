@@ -19,7 +19,7 @@ export const Footer = () => {
           Scalable, efficient, and safer elections around the world 🌍
         </p>
       </div>
-      <div className="bg-zinc-900">
+      <div className="bg-zinc-900 pt-12">
         <p className="font-light p-2 text-right ">
           Made with ❣️ on Polygon zkEVM Cardona by copy pasta
         </p>
