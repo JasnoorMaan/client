@@ -11,7 +11,7 @@ interface CardProps {
 export const Cards: React.FC<CardProps> = ({ index, name, votes }) => {
   const handleTransaction = () => {
     try {
-      const indexBigInt = BigInt(index); // Explicitly convert index to BigInt
+      const indexBigInt = BigInt(index);
       console.log("Preparing transaction for candidate index:", indexBigInt);
       return prepareContractCall({
         contract: CONTRACT,
@@ -26,7 +26,7 @@ export const Cards: React.FC<CardProps> = ({ index, name, votes }) => {
 
   return (
     <div className="flex flex-col flex-wrap justify-start items-center gap-4 border-[1px] min-w-[33vw] border-white p-8 rounded-xl">
-      <h1 className="text-5xl font-bold">{name}</h1>
+      <h1 className="text-5xl font-bold md:text-3xl">{name}</h1>
       <p>Votes: {votes}</p>
       <TransactionButton
         transaction={handleTransaction}
